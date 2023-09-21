@@ -22,7 +22,7 @@ function AppLayout() {
       <Sidebar />
       <Header />
       <Main>
-        <Outlet></Outlet>;
+        <Outlet></Outlet>
       </Main>
     </StyledAppLayout>
   );
