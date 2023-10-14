@@ -7,6 +7,7 @@ export async function getSettings() {
     console.error(error);
     throw new Error("Settings could not be loaded");
   }
+  console.log(data);
   return data;
 }
 
@@ -16,7 +17,7 @@ export async function updateSetting(newSetting) {
     .from("settings")
     .update(newSetting)
     // There is only ONE row of settings, and it has the ID=1, and so this is the updated one
-    .eq("id", 1)
+    .eq("id", 3)
     .single();
 
   if (error) {
